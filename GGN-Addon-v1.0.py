@@ -3,7 +3,9 @@ import hexchat
 __module_name__ = "Gazelle Games Script"
 __module_version__ = "1.0"
 __module_description__ = "Adds a custom top menu bar with action buttons"
- 
+
+    # Linux install guide
+    # Install scripts to this location /home/<userfolder>/.config/hexchat/addons/
     # load script commands /py load GGN-Addon.py
 
 def create_menus():
