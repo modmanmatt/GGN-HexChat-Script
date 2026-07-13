@@ -1,0 +1,3 @@
+**Linux install guide**
+*Install scripts to this location
+/home/<userfolder>/.config/hexchat/addons/
