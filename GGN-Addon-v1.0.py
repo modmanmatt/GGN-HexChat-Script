@@ -40,8 +40,11 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/Emoticons/🙋" "SAY 🙋"')
     hexchat.command('MENU ADD "Chat/Emoticons/🤔" "SAY 🤔"')
     hexchat.command('MENU ADD "Chat/Emoticons/🤔" "SAY 🤔"')
-    hexchat.command('MENU ADD "Chat/Emoticons/⁶🤷‍♂️⁷" "SAY ⁶🤷‍♂️⁷"')
-    hexchat.command('MENU ADD "Chat/Emoticons/🎮🕹️👾" "SAY 🎮🕹️👾"')
+
+    # 4. Add a submenu with toggle buttons for emoticons
+    hexchat.command('MENU ADD "Chat/Emoticons2"')
+    hexchat.command('MENU ADD "Chat/Emoticons2/⁶🤷‍♂️⁷" "SAY ⁶🤷‍♂️⁷"')
+    hexchat.command('MENU ADD "Chat/Emoticons2/🎮🕹️👾" "SAY 🎮🕹️👾"')
 
     # 4. Add a submenu with toggle buttons for emoticons
     hexchat.command('MENU ADD "Chat/ASCII EMO"')
