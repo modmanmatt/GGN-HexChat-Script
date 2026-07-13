@@ -4,7 +4,7 @@ __module_name__ = "Gazelle Games Script"
 __module_version__ = "1.0"
 __module_description__ = "Adds a custom top menu bar with action buttons"
  
-    # load script commands /py load GGN-Addon1.py
+    # load script commands /py load GGN-Addon.py
 
 def create_menus():
 
@@ -38,6 +38,8 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/Emoticons/🙋" "SAY 🙋"')
     hexchat.command('MENU ADD "Chat/Emoticons/🤔" "SAY 🤔"')
     hexchat.command('MENU ADD "Chat/Emoticons/🤔" "SAY 🤔"')
+    hexchat.command('MENU ADD "Chat/Emoticons/⁶🤷‍♂️⁷" "SAY ⁶🤷‍♂️⁷"')
+    hexchat.command('MENU ADD "Chat/Emoticons/🎮🕹️👾" "SAY 🎮🕹️👾"')
 
     # 4. Add a submenu with toggle buttons for emoticons
     hexchat.command('MENU ADD "Chat/ASCII EMO"')
@@ -55,15 +57,18 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/ASCII EMO/🫱(‿ώ‿)🫲" "SAY 🫱(‿ώ‿)🫲"')
     hexchat.command('MENU ADD "Chat/ASCII EMO/(⸝⸝ᴗ﹏ᴗ⸝⸝) ᶻ 𝗓 𐰁" "SAY (⸝⸝ᴗ﹏ᴗ⸝⸝) ᶻ 𝗓 𐰁"')
     hexchat.command('MENU ADD "Chat/ASCII EMO/( ＾◡＾)っ✂╰⋃╯" "SAY ( ＾◡＾)っ✂╰⋃╯"')
-    hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú" "SAY (Sîúúúú"')
-    hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú" "SAY (Sîúúúú"')
-    hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú" "SAY (Sîúúúú"')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú ⛏️🚜👷🚧🏗️ Mining Dance 💰💃🏻🕺🏽💃🕺" "SAY Sîúúúú ⛏️🚜👷🚧🏗️ Mining Dance 💰💃🏻🕺🏽💃🕺"')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú💃🏻🕺🏽💃🕺" "SAY Sîúúúú 💰💃🏻🕺🏽💃🕺"')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/🚜👷🚧🏗️" "SAY 🚜👷🚧🏗️"')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/Mining⛏" "SAY Mining⛏')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety" "SAY ( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety')
 
 
-    # 4. Add a submenu with toggle buttons
+    # 4. Add a submenu with toggle buttons for quick messages
     hexchat.command('MENU ADD "Chat/Quick Messages"')
     hexchat.command('MENU ADD "Chat/Quick Messages/Say Hello" "SAY Hello Everyone! 🙋"')
     hexchat.command('MENU ADD "Chat/Quick Messages/Say Good Morning GGN" "SAY Good Morning GGN Fam! ☀️"')
+    hexchat.command('MENU ADD "Chat/Quick Messages/$nick is in the House woot woot sup yall 🙋" "SAY $nick is in the House woot woot sup yall 🙋"')
     hexchat.command('MENU ADD "Chat/Quick Messages/Say GoodBye Everyone" "SAY Goodby Everyone!"')
     hexchat.command('MENU ADD "Chat/Quick Messages/Say GoodBye GGN" "SAY Good Bye GGN Fam!"')
     hexchat.command('MENU ADD "Chat/Quick Messages/Funny Random Saying" ".funny"')
@@ -71,8 +76,13 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/Quick Messages/Away Mode" "AWAY Brb, stepping out."')
     hexchat.command('MENU ADD "Chat/Quick Messages/Away Mode" "AWAY Brb, stepping out."')
 
-        # 3. Add a visual separator line
-    hexchat.command('MENU ADD "Commands/-"')
+    # 4. Add a submenu with toggle buttons for infobot emoticons
+    hexchat.command('MENU ADD "Chat/InfoBot"')
+    hexchat.command('MENU ADD "Chat/InfoBot/Lenny Face" "SAY .lenny"')
+    hexchat.command('MENU ADD "Chat/InfoBot/Shrug Face" "SAY .shrug"')
+    hexchat.command('MENU ADD "Chat/InfoBot/Shrug Face" "SAY shrug"')
+
+
 
         # 1. Create a primary top-level menu named "Tools"
     hexchat.command('MENU ADD "Commands"')
@@ -92,20 +102,29 @@ def create_menus():
     hexchat.command('MENU ADD "Commands/Show Stats" "SAY !stats "')
     hexchat.command('MENU ADD "Commands/GMT DateTime" "SAY !tock"')
     hexchat.command('MENU ADD "Commands/Show Local Date Time" "SAY .time"')
+    hexchat.command('MENU ADD "Commands/-"')    # 3. Add a visual separator line
     hexchat.command('MENU ADD "Commands/Random Quote" "SAY !quote "')
-    hexchat.command('MENU ADD "Commands/Show Lenny Face" "SAY .lenny"')
+
+
+    # 1. Create a primary top-level menu named "Tools"
+    hexchat.command('MENU ADD "Links"')
+    # 2. Add clickable buttons that execute standard IRC commands
+    hexchat.command('MENU ADD "Links/Recipe-Crafting Wiki" "SAY Recipe-Crafting wiki = https://gazellegames.net/forums.php?action=viewthread&threadid=35555"')
+    hexchat.command('MENU ADD "Links/Equipment Providing Buffs Wiki" "SAY Equipment Providing Buffs Wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
+    hexchat.command('MENU ADD "Links/Better Inventory: Make your inventory better" "SAY Better Inventory: Make your inventory better wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
+    hexchat.command('MENU ADD "Links/Userscript Just the Tip! -- GGn Tip Stats " "SAY GGn Tip Stats  | https://gazellegames.net/forums.php?action=viewthread&threadid=35256"')
+    hexchat.command('MENU ADD "Links/GGn Mining Stats: Get stats for all your mines in IRC" "SAY GGn Mining Stats|Get stats for all your mines in IRC | https://greasyfork.org/en/scripts/558380-ggn-mining-stats"')
+
 
 
     # 1. Create a primary top-level menu named "Tools"
     hexchat.command('MENU ADD "Tools"')
-
     # 2. Add clickable buttons that execute standard IRC commands
     hexchat.command('MENU ADD "Tools/Check My Info" "WHOIS $nick"')
     hexchat.command('MENU ADD "Tools/Clear Screen" "CLEAR"')
 
     # 3. Add a visual separator line
     hexchat.command('MENU ADD "Tools/-"')
-
     # 4. Add a submenu with toggle buttons
     hexchat.command('MENU ADD "Tools/Quick Messages"')
     hexchat.command('MENU ADD "Tools/Quick Messages/Say Hello" "SAY Hello everyone!"')
@@ -130,38 +149,5 @@ hexchat.hook_unload(unload_cb)
 
 print(f"{__module_name__} version {__module_version__} loaded. Look at your top menu bar!")
 # End Menu Script
-
-# Start funny saying script code
-import hexchat
-import random
-
-__module_name__ = "FunnySayings"
-__module_version__ = "1.0"
-__module_description__ = "Prints a random funny saying when you type /funny"
-
-# Add your favorite sayings to this list
-sayings = [
-    "I'm not arguing, I'm just explaining why I'm right.",
-    "Do not take life too seriously. You will never get out of it alive.",
-    "I wear multiple hats. None of them are for hiding my insanity.",
-    "Common sense is like a superpower. Not everyone has it.",
-    "My ability to remember useless information at any given second is unparalleled.",
-    "I pretend to work. They pretend to pay me."
-]
-
-def funny_command_cb(word, word_eol, userdata):
-    # Fetch the channel the user is currently in
-    channel = hexchat.get_info("channel")
-
-    if channel:
-        # Pick a random saying
-        random_saying = random.choice(sayings)
-        # Send the message to the current channel
-        hexchat.command(f"say {random_saying}")
-
-    return hexchat.EAT_ALL
-
-# Register the /funny command in HexChat
-hexchat.hook_command(".funny", funny_command_cb, help="Usage: /funny - prints a random funny saying")
 
 print("GGN1 Script Loaded!")
