@@ -1,0 +1,34 @@
+ Start funny saying script code
+import hexchat
+import random
+
+__module_name__ = "FunnySayings"
+__module_version__ = "1.0"
+__module_description__ = "Prints a random funny saying when you type /funny"
+
+# Add your favorite sayings to this list
+sayings = [
+    "I'm not arguing, I'm just explaining why I'm right.",
+    "Do not take life too seriously. You will never get out of it alive.",
+    "I wear multiple hats. None of them are for hiding my insanity.",
+    "Common sense is like a superpower. Not everyone has it.",
+    "My ability to remember useless information at any given second is unparalleled.",
+    "I pretend to work. They pretend to pay me."
+]
+
+def funny_command_cb(word, word_eol, userdata):
+    # Fetch the channel the user is currently in
+    channel = hexchat.get_info("channel")
+
+    if channel:
+        # Pick a random saying
+        random_saying = random.choice(sayings)
+        # Send the message to the current channel
+        hexchat.command(f"say {random_saying}")
+
+    return hexchat.EAT_ALL
+
+# Register the /funny command in HexChat
+hexchat.hook_command(".funny", funny_command_cb, help="Usage: /funny - prints a random funny saying")
+
+print("GGN1 Script Loaded!")
