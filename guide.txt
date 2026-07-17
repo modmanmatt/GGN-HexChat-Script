@@ -1,3 +1,7 @@
 **Linux install guide**
 *Install scripts to this location
 /home/<userfolder>/.config/hexchat/addons/
+
+emoji script
+sudo apt install hexchat-python3
+sudo apt install python3-pip
