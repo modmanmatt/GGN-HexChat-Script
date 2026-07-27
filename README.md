@@ -20,4 +20,4 @@ This post will be updated and more info is coming soon (check back regularly)
 Thanks
 
 The main script addon file is located in the addons folder called GGN-Addon.py
-this needs to be placed into this location /home/<userfolder>/.config/hexchat/addons/
+this needs to be placed into this location /home/"userfolder"/.config/hexchat/addons/
