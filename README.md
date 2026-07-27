@@ -19,5 +19,13 @@ i already have a working basic hexchat and mirc script for commands and emoticon
 This post will be updated and more info is coming soon (check back regularly)
 Thanks
 
+= ** Installation instructions ** =
+Download = https://github.com/modmanmatt/GGN-HexChat-Script/blob/main/addons/GGN-Addon.py
+
+-- Linux install
 The main script addon file is located in the addons folder called GGN-Addon.py
 this needs to be placed into this location /home/"userfolder"/.config/hexchat/addons/
+
+-- Windows install
+Standard Install: C:\Users\<YourUsername>\AppData\Roaming\HexChat\addons (type %APPDATA%\HexChat\addons into File Explorer)Microsoft Store Install: C:\Users\<YourUsername>\AppData\Local\Packages\39215TingPing.HexChat_fqe8h3fzrj50c\LocalCache\Roaming\HexChat\addons (type %LOCALAPPDATA%\Packages\39215TingPing.HexChat_fqe8h3fzrj50c\LocalCache\Roaming\HexChat\addons into File Explorer)
+
