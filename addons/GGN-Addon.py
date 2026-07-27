@@ -1,13 +1,22 @@
 import hexchat
 
 __module_name__ = "Gazelle Games Script"
-__module_version__ = "1.0"
+__module_version__ = "1.01"
 __module_description__ = "Adds a custom top menu bar with action buttons"
  
     # Linux install guide
     # Install scripts to this location /home/<userfolder>/.config/hexchat/addons/
     # load script commands with /py load GGN-Addon.py
+
+    # windows install guide
+    # Standard Install: C:\Users\<YourUsername>\AppData\Roaming\HexChat\addons (type %APPDATA%\HexChat\addons into File Explorer)
+    # Microsoft Store Install: C:\Users\<YourUsername>\AppData\Local\Packages\39215TingPing.HexChat_fqe8h3fzrj50c\LocalCache\Roaming\HexChat\addons
+    # (type %LOCALAPPDATA%\Packages\39215TingPing.HexChat_fqe8h3fzrj50c\LocalCache\Roaming\HexChat\addons into File Explorer
+
+    # Load and unload script
+    # load script commands with /py load GGN-Addon.py
     # unload script commands with /py unload GGN-Addon.py
+
 
 def create_menus():
 
@@ -68,7 +77,7 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/ASCII EMO/🚜👷🚧🏗️" "SAY 🚜👷🚧🏗️"')
     hexchat.command('MENU ADD "Chat/ASCII EMO/Mining⛏" "SAY Mining⛏')
     hexchat.command('MENU ADD "Chat/ASCII EMO/( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety" "SAY ( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety')
-
+    hexchat.command('MENU ADD "Chat/ASCII EMO/¯\_(ツ)_/¯⁭ Shruggs" "SAY ¯\_(ツ)_/¯⁭ Shruggs')
 
     # 4. Add a submenu with toggle buttons for quick messages
     hexchat.command('MENU ADD "Chat/Quick Messages"')
@@ -117,6 +126,8 @@ def create_menus():
     # 1. Create a primary top-level menu named "Tools"
     hexchat.command('MENU ADD "Links"')
     # 2. Add clickable buttons that execute standard IRC commands
+    hexchat.command('MENU ADD "Links/GGN HexChat GitHub Project Development Page" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
+    hexchat.command('MENU ADD "Links/GGN HexChat Script on GGN website" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
     hexchat.command('MENU ADD "Links/Recipe-Crafting Wiki" "SAY Recipe-Crafting wiki = https://gazellegames.net/forums.php?action=viewthread&threadid=35555"')
     hexchat.command('MENU ADD "Links/Equipment Providing Buffs Wiki" "SAY Equipment Providing Buffs Wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
     hexchat.command('MENU ADD "Links/Better Inventory: Make your inventory better" "SAY Better Inventory: Make your inventory better wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
