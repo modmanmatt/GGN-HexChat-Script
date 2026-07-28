@@ -55,6 +55,7 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/Emoticons2"')
     hexchat.command('MENU ADD "Chat/Emoticons2/⁶🤷‍♂️⁷" "SAY ⁶🤷‍♂️⁷"')
     hexchat.command('MENU ADD "Chat/Emoticons2/🎮🕹️👾" "SAY 🎮🕹️👾"')
+    hexchat.command('MENU ADD "Chat/Emoticons2/🚜👷🚧🏗️" "SAY 🚜👷🚧🏗️"')
 
     # 4. Add a submenu with toggle buttons for emoticons
     hexchat.command('MENU ADD "Chat/ASCII EMO"')
@@ -74,9 +75,11 @@ def create_menus():
     hexchat.command('MENU ADD "Chat/ASCII EMO/( ＾◡＾)っ✂╰⋃╯" "SAY ( ＾◡＾)っ✂╰⋃╯"')
     hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú ⛏️🚜👷🚧🏗️ Mining Dance 💰💃🏻🕺🏽💃🕺" "SAY Sîúúúú ⛏️🚜👷🚧🏗️ Mining Dance 💰💃🏻🕺🏽💃🕺"')
     hexchat.command('MENU ADD "Chat/ASCII EMO/Sîúúúú💃🏻🕺🏽💃🕺" "SAY Sîúúúú 💰💃🏻🕺🏽💃🕺"')
-    hexchat.command('MENU ADD "Chat/ASCII EMO/🚜👷🚧🏗️" "SAY 🚜👷🚧🏗️"')
-    hexchat.command('MENU ADD "Chat/ASCII EMO/Mining⛏" "SAY Mining⛏')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/Mining ⛏" "SAY Mining ⛏')
     hexchat.command('MENU ADD "Chat/ASCII EMO/( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety" "SAY ( ꩜ ᯅ ꩜;)⁭ ⁭ Anxiety')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/(っ´ཀ`)っ Ɑ͞ ̶͞ ̶͞ ̶͞ لں͞" "SAY (っ´ཀ`)っ Ɑ͞ ̶͞ ̶͞ ̶͞ لں͞')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/8====D꧂ (´〇`)" "SAY 8====D꧂ (´〇`)')
+    hexchat.command('MENU ADD "Chat/ASCII EMO/8===✊🏼=D💦😩" "SAY 8===✊🏼=D💦😩s')
     hexchat.command('MENU ADD "Chat/ASCII EMO/¯\_(ツ)_/¯⁭ Shruggs" "SAY ¯\_(ツ)_/¯⁭ Shruggs')
 
     # 4. Add a submenu with toggle buttons for quick messages
@@ -126,15 +129,16 @@ def create_menus():
     # 1. Create a primary top-level menu named "Tools"
     hexchat.command('MENU ADD "Links"')
     # 2. Add clickable buttons that execute standard IRC commands
-    hexchat.command('MENU ADD "Links/GGN HexChat GitHub Project Development Page" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
-    hexchat.command('MENU ADD "Links/GGN HexChat Script on GGN website" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
+
     hexchat.command('MENU ADD "Links/Recipe-Crafting Wiki" "SAY Recipe-Crafting wiki = https://gazellegames.net/forums.php?action=viewthread&threadid=35555"')
     hexchat.command('MENU ADD "Links/Equipment Providing Buffs Wiki" "SAY Equipment Providing Buffs Wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
     hexchat.command('MENU ADD "Links/Better Inventory: Make your inventory better" "SAY Better Inventory: Make your inventory better wiki | https://gazellegames.net/wiki.php?action=article&id=447"')
     hexchat.command('MENU ADD "Links/Userscript Just the Tip! -- GGn Tip Stats " "SAY GGn Tip Stats  | https://gazellegames.net/forums.php?action=viewthread&threadid=35256"')
     hexchat.command('MENU ADD "Links/GGn Mining Stats: Get stats for all your mines in IRC" "SAY GGn Mining Stats|Get stats for all your mines in IRC | https://greasyfork.org/en/scripts/558380-ggn-mining-stats"')
     hexchat.command('MENU ADD "Links/GGn IRC Bot Commands List" "SAY IRC Bot Commands List | https://gazellegames.net/wiki.php?action=article&id=173"')
-
+    hexchat.command('MENU ADD "Links/-"') # 3. Add a visual separator line
+    hexchat.command('MENU ADD "Links/GGN HexChat GitHub Project Development Page" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
+    hexchat.command('MENU ADD "Links/GGN HexChat Script on GGN website" "SAY Recipe-Crafting wiki = https://github.com/modmanmatt/GGN-HexChat-Script"')
 
     # 1. Create a primary top-level menu named "Tools"
     hexchat.command('MENU ADD "Tools"')
